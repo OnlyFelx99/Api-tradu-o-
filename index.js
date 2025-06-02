@@ -1,6 +1,8 @@
 import express from 'express';
+import cors from 'cors';
 
 const app = express();
+app.use(cors()); // Libera CORS para todas as origens
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
