@@ -5,6 +5,10 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
+app.post('/translate', (req, res) => {
+  const { frase, direcao } = req.body;  // A captura dos parâmetros no corpo da requisição
+
+  
 // Dicionários de tradução
 const enToPt = {
   "i": "eu",
@@ -96,8 +100,7 @@ function normalizar(texto) {
 }
 
 // Endpoint de Tradução
-app.post('/translate', (req, res) => {
-  const { frase, direcao } = req.body;  // A captura dos parâmetros no corpo da requisição
+// A captura dos parâmetros no corpo da requisição
 
   if (!frase || !direcao) {
     return res.status(400).json({
