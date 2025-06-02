@@ -2,7 +2,7 @@
   "name": "translator-api",
   "version": "1.0.0",
   "description": "API de tradução simples com histórico.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
@@ -10,7 +10,7 @@
     "express": "^4.17.1"
   },
   "engines": {
-    "node": "14.x"
+    "node": "22.x"
   },
   "devDependencies": {},
   "author": "",
